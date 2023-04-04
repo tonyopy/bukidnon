@@ -77,25 +77,22 @@ nav .navbar-menu a:hover {
 
 
 
-
-
-
-
 .bg-body {
     height: 100%;
     width: 100%;
     background-image: url('https://i.ibb.co/YjNJK1g/bukidnon-hehe.jpg');
     background-size: cover;
-    
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
    
 }
 
 div .content {
-    text-align: center;
     color: white;
-    position: absolute;
-    top: 40%;
-    left: 30%;
+    text-align: center; 
+   
 }
 
 
@@ -111,3 +108,34 @@ div h2 {
     font-size: 30px;
 }
 
+@media only screen and (min-width: 601px) {
+    div h1 {
+      font-size: 100px;
+    }
+    div h2 {
+        font-size: 30px;
+      }
+  }
+
+  @media only screen and (max-width: 600px) {
+    div h1{
+      font-size: 50px;
+    }
+    div h2{
+        font-size: 20px;
+      }
+    nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 10px;
+        box-shadow: 0px 2px 4px #aaaaaa;
+        font-size: small;
+    }
+    
+  }
