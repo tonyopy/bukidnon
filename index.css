@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    box-shadow: 0px 2px 4px #aaaaaa;
+
+}
+
+nav h1 {
+    font-size: 25px;
+    font-weight: bolder;
+   
+    margin-left: 25px;
+    
+
+}
+nav .navbar-menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    
+}
+
+nav li {
+    margin-right: 26px;    
+}
+
+nav .navbar-menu a {
+    color:black;
+    position: relative;
+    text-decoration: none;
+    padding: 0 10px;
+
+}
+nav .navbar-menu a:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.navbar-menu a::after {
+    content: "";
+    position: absolute;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    
+
+}
+
+.navbar-menu a:hover::after{
+    width: 100%;
+    
+   
+
+}
+
+
+
+
+
+
+
+.bg-body {
+    height: 100%;
+    width: 100%;
+    background-image: url('https://i.ibb.co/YjNJK1g/bukidnon-hehe.jpg');
+    background-size: cover;
+    
+   
+}
+
+div .content {
+    text-align: center;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+
+
+
+div h1 {
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+div h2 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
